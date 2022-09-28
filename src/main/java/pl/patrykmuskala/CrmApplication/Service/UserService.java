@@ -1,4 +1,4 @@
-package pl.patrykmuskala.CrmApplication;
+package pl.patrykmuskala.CrmApplication.Service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
