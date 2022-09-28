@@ -17,7 +17,7 @@ public class User {
     @Column(nullable = false)
     private String surname;
 
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "roles_id", referencedColumnName = "id")
     private Role role;
 

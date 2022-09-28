@@ -13,8 +13,8 @@ public class Address {
     @Column(nullable = false)
     private String city;
 
-    @Column(nullable = false)
-    private String postal_code;
+    @Column(nullable = false, name = "postal_code")
+    private String postalCode;
 
     @Column(nullable = false)
     private String street;
@@ -41,12 +41,12 @@ public class Address {
         this.city = city;
     }
 
-    public String getPostal_code() {
-        return postal_code;
+    public String getPostalCode() {
+        return postalCode;
     }
 
-    public void setPostal_code(String postalCode) {
-        this.postal_code = postalCode;
+    public void setPostalCode(String postalCode) {
+        this.postalCode = postalCode;
     }
 
     public String getStreet() {
@@ -78,14 +78,14 @@ public class Address {
 
     public Address(String city, String postal_code, String street, int street_number, int house_number) {
         this.city = city;
-        this.postal_code = postal_code;
+        this.postalCode = postal_code;
         this.street = street;
         this.street_number = street_number;
         this.house_number = house_number;
     }
     public Address(String city, String postal_code, String street, int street_number) {
         this.city = city;
-        this.postal_code = postal_code;
+        this.postalCode = postal_code;
         this.street = street;
         this.street_number = street_number;
     }

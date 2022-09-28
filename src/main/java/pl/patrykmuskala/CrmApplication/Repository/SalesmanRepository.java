@@ -6,4 +6,7 @@ import pl.patrykmuskala.CrmApplication.Model.Salesman;
 
 @Repository
 public interface SalesmanRepository extends JpaRepository<Salesman, Integer> {
+    Iterable<Salesman> findAllByName(String name);
+    Iterable<Salesman> findAllBySurname(String name);
+    Iterable<Salesman> findAllByTeam_Name(String name);
 }

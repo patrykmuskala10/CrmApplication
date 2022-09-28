@@ -6,4 +6,9 @@ import pl.patrykmuskala.CrmApplication.Model.User;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Integer> {
+    Iterable<User> findAllByName(String name);
+    Iterable<User> findAllBySurname(String name);
+    Iterable<User> findAllByRole_Name(String name);
+
+
 }

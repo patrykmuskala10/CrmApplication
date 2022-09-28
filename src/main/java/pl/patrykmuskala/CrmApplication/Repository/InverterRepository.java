@@ -7,4 +7,6 @@ import pl.patrykmuskala.CrmApplication.Model.Inverter;
 @Repository
 
 public interface InverterRepository extends JpaRepository<Inverter, Integer> {
+
+    Iterable<Inverter> findAllByManufacturer(String manufacturer);
 }
