@@ -20,7 +20,6 @@ public interface OrderRepository extends JpaRepository<Order, Integer> {
     Iterable<Order> findAllByInverter_Model(String model);
     Iterable<Order> findAllByInverter_Manufacturer(String manufacturer);
     Iterable<Order> findAllByUser_Name(String name);
-    Iterable<Order> findAllByUser_Surname(String surname);
     Iterable<Order> findAllBySalesman_Name(String name);
     Iterable<Order> findAllBySalesman_Surname(String surname);
     Iterable<Order> findAllBySalesman_Team_Name(String team);

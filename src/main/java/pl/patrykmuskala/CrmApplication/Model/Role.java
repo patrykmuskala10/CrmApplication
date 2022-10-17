@@ -3,15 +3,13 @@ package pl.patrykmuskala.CrmApplication.Model;
 
 import javax.persistence.*;
 
-@Entity
-@Table(name = "roles")
+@Entity @Table(name = "roles")
 public class Role {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(nullable = false)
+    @Column(nullable = false, length = 45)
     private String name;
 
     public int getId() {

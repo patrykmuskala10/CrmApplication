@@ -5,7 +5,6 @@ import org.springframework.web.bind.annotation.*;
 import pl.patrykmuskala.CrmApplication.Model.*;
 import pl.patrykmuskala.CrmApplication.Repository.OrderRepository;
 
-import java.time.LocalDate;
 import java.util.Optional;
 
 @RestController
@@ -86,10 +85,10 @@ public class OrderService {
         return orderRepository.findAllByUser_Name(userName);
     }
 
-    @GetMapping("/userSurname={userSurname}")
-    public Iterable<Order> getOrdersByUserSurname(@PathVariable(value = "userSurname") String userSurname) {
-        return orderRepository.findAllByUser_Surname(userSurname);
-    }
+//    @GetMapping("/userSurname={userSurname}")
+//    public Iterable<Order> getOrdersByUserSurname(@PathVariable(value = "userSurname") String userSurname) {
+//        return orderRepository.findAllByUser_Surname(userSurname);
+//    }
 
     @GetMapping("/salesmanName={salesmanName}")
     public Iterable<Order> getOrdersBySalesmanName(@PathVariable(value = "salesmanName") String salesmanName) {

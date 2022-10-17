@@ -3,7 +3,6 @@ package pl.patrykmuskala.CrmApplication.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import pl.patrykmuskala.CrmApplication.Model.Inverter;
-import pl.patrykmuskala.CrmApplication.Model.Panel;
 import pl.patrykmuskala.CrmApplication.Repository.InverterRepository;
 
 import java.util.Optional;

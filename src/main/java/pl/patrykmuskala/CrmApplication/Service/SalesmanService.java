@@ -2,7 +2,6 @@ package pl.patrykmuskala.CrmApplication.Service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import pl.patrykmuskala.CrmApplication.Model.Customer;
 import pl.patrykmuskala.CrmApplication.Model.Salesman;
 import pl.patrykmuskala.CrmApplication.Repository.SalesmanRepository;
 
